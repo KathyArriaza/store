@@ -47,10 +47,5 @@ public class ProductService {
         }
     }
 
-    public List<Product> getProductsByCategory(String category) {
-        Product[] allProducts = getAllProducts();
-        return Arrays.stream(allProducts)
-                .filter(product -> product.getCategory().equalsIgnoreCase(category))
-                .collect(Collectors.toList());
-    }
+
 }
