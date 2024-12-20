@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "e1c76ba2-f38b-4929-bb61-0c03b1ccf46f",
+		"name": "Store app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37691568"
+	},
+	"item": [
+		{
+			"name": "Api products",
+			"item": [
+				{
+					"name": "Select by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"products",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select All",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Select by Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8091/api/products/category/jewelery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8091",
+							"path": [
+								"api",
+								"products",
+								"category",
+								"jewelery"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api Orders",
+			"item": [
+				{
+					"name": "Create an order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[3, 5, 6]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8090/api/orders/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"orders",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/api/orders/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"api",
+								"orders",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Api Payment",
+			"item": [
+				{
+					"name": "Create a payment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"paymentMethod\": \"CREDIT_CARD\",\r\n    \"status\": \"COMPLETED\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8094/api/payments/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"payments",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Select by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8094/api/payments/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8094",
+							"path": [
+								"api",
+								"payments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
